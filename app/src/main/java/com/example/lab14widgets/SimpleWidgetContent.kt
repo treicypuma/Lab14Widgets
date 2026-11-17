@@ -44,6 +44,11 @@ class SimpleWidgetContent : GlanceAppWidget() {
                     text = "Página Principal",
                     onClick = actionStartActivity<MainActivity>()
                 )
+                Button(
+                    text = "Segunda vista",
+                    modifier = GlanceModifier.padding(start = 8.dp),
+                    onClick = actionStartActivity<SecondActivity>()
+                )
             }
         }
     }
