@@ -39,6 +39,18 @@
                 android:resource="@xml/simple_widget_info" />
         </receiver>
 
+        <!-- Lab 14: Ejercicio final, widget Alerta Vecinal -->
+        <receiver
+            android:name=".MiWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mi_widget_info" />
+        </receiver>
+
     </application>
 
 </manifest>
